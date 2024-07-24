@@ -12,8 +12,6 @@
 
 ![Screenshot (394)](https://github.com/user-attachments/assets/36a1a7fa-495e-4862-9b67-2541d185068b)
 
-# help for installation:
-
 # REQUIREMENT
 https://github.com/Demigod916/object_gizmo download it
 
