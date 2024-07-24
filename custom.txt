@@ -1,0 +1,12 @@
+["bkr_prop_prtmachine_dryer_spin"] = {
+["name"] = "bkr_prop_prtmachine_dryer_spin",
+["label"] = "Dryer Machine",
+["weight"] = 500,
+["type"] = "item",
+["image"] = "bkr_prop_prtmachine_dryer_spin.png",
+["unique"] = true,
+["useable"] = true,
+["shouldClose"] = true,
+["combinable"] = nil,
+["description"] = ""
+},
