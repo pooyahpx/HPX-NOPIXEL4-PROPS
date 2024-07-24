@@ -22,6 +22,6 @@ https://github.com/Demigod916/object_gizmo download it
 4. rename it to qb-props
 5. start your server and enjoy iy 
 
-# DISCORD FOR MORE HELP 
+# DISCORD FOR HELP 
 
 IF YOU NEED MORE HELP TEXT ME ON DISCORD poya3724
