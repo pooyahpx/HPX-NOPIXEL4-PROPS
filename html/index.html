@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://use.fontawesome.com/e5864653ea.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>pa-money</title>
+</head>
+    <body>
+
+
+      
+      <div class="create-prop-page">
+
+        <div class="top-box">
+          <div class="top-box-item">[W] Mode  Translate</div>
+          <div class="top-box-item">[R] Mode Rotate</div>
+          <div class="top-box-item" style="font-size: 40%;">[LALT] Place On Ground</div>
+          <div class="top-box-item">[ESC] Done Editing</div>
+        </div>
+    
+        <div class="discard-pop-up prop-popup">
+          <div class="header">Shopping</div>
+          <div class="alt">You need to build your furniture using the Shopping List, are you sure you want to leave?</div>
+          <div class="leave-button">Leave</div>
+          <div class="cancel-button">Cancel</div>
+        </div>
+    
+        <div class="save-pop-up prop-popup">
+          <div class="header">Shopping List</div>
+          <div class="alt">List of materials you need to complete furnishing</div>
+          <img src="../images/app.png" class="create-prop-img" alt="">
+          <div class="create-prop-name-box">Computer Desk</div>
+          <div class="amount-box">Amount you have</div>
+          <div class="req-count-box">1</div>
+          <div class="amount-count-box">1</div>
+          <div class="req-box">Amount Required</div>
+          <div class="save-build-button">Save/Build</div>
+          <div class="cancel-button">Cancel</div>
+          <div class="discard-button">Discard</div>
+        </div>
+    
+        <hr class="tophr">
+        <div class="colored"></div>
+    
+        <div class="mid-box">
+          <div class="mid-item prop-settings" data-type="save">Save</div>
+          <div class="mid-item">Undo</div>
+          <div class="mid-item">Rado</div>
+          <div class="mid-item prop-settings" data-type="discard">Discard</div>
+          <div class="mid-item">Shopping List</div>
+          <div class="mid-item">Settings</div>
+          <div class="mid-item prop-settings" data-type="delete">Delete</div>
+        </div>
+    
+        <div class="header">Furniture List</div>
+        <div class="alt">Objects you can place or have placed</div>
+        <input type="text" class="prop-search-input" placeholder="Search">
+        <i class="fa fa-search prop-search-icon" aria-hidden="true"></i>
+        <div class="hide-panel">
+          <div class="left-box"><</div>
+          <div class="left-box right"><</div>
+          <div class="panel-text">Hide Panel</div>
+        </div>
+        <div style="right: 3.5%;left: 94%;" class="hide-panel">
+          <div class="left-box">></div>
+          <div class="left-box right">></div>
+          <div class="panel-text" style="transform: rotate(-90deg);">Hide Panel</div>
+        </div>
+        <div class="edit-box">Edit</div>
+        <div class="edit-box placed">Placed</div>
+    
+    
+        <div class="prop-info-box">
+          <div class="prop-info-header">Item Information</div>
+          <div class="prop-info-alt">Selected item details</div>
+          <div class="model-hash-box">Model Hash</div>
+          <div class="model-hash hashbox">31071109</div>
+    
+          <div class="model-hash-box" style="top: 17%;bottom: 78%;">Prop Name</div>
+          <div class="model-hash propmodel"style="top: 17%;bottom: 78%;">prop_tool_bench</div>
+    
+          <div class="prop-header-2">Item Position</div>
+          <div class="prop-alt-2">Selected item Position and Rotation values</div>
+          <div class="prop-desc-box">
+            <div class="prop-desc-item">
+              <div class="desc-item-name">X position</div>
+            </div>
+            <div class="prop-desc-item">
+              <div class="desc-item-name">Y position</div>
+            </div>
+            <div class="prop-desc-item">
+              <div class="desc-item-name">Z position</div>
+            </div>
+            <div class="prop-desc-item">
+              <div class="desc-item-name">X rotation</div>
+            </div>
+            <div class="prop-desc-item">
+              <div class="desc-item-name">Y rotation</div>
+            </div>
+            <div class="prop-desc-item">
+              <div class="desc-item-name">Z rotation</div>
+            </div>
+          </div>
+    
+          <div class="prop-desc-alt-box">
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name posx">-647.92</div>
+            </div>
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name posy">-1131.359</div>
+            </div>
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name posz">50.982</div>
+            </div>
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name rotx">0.0</div>
+            </div>
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name roty">0.0</div>
+            </div>
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name rotz">132.5278</div>
+            </div>
+          </div>
+    
+          <div class="item-material-header">Item Material</div>
+          <div class="item-material-alt">Material used to place item</div>
+          <img src="../images/app.png" class="select-item-img" alt="">
+          <div class="select-item-name-box">Basic Crafting Bench</div>
+          <div class="material-placed">
+              <div class="material-placed-name">Material Placed</div>
+          </div>
+          <div class="material-placed-number">
+            <div class="material-placed-text">0</div>
+          </div>
+    
+          <div class="in-inventory-box">
+            <div class="in-inventory-text">In inventory</div>
+          </div>
+          <div class="in-inventory-count">
+            <div class="in-inventory-count-text">1</div>
+          </div>
+    
+    
+        </div>
+
+      <div class="prop-box">
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+      </div>
+  
+      </div>
+
+      
+
+    </body>
+</html>
+
+<script src="./script.js" type="text/javascript"></script>
+

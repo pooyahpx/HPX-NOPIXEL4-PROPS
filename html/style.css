@@ -1,0 +1,1097 @@
+* {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: mont;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+@font-face {
+  font-family: mont;
+  src: url("../html/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: GemunuLibre-Bold;
+  src: url("../html/GemunuLibre-Bold.ttf");
+}
+
+@font-face {
+  font-family: AGENCYB;
+  src: url("../html/AGENCYB.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url("../html/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url("../html/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-SemiBold;
+  src: url("../html/Gilroy-SemiBold.ttf");
+}
+
+body {
+  margin: 0;
+  display: none;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.create-prop-page .header{
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 85%;
+  left: 0%;
+  bottom: 88%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0ceebf;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .alt{
+  position: absolute;
+  top: 0%;
+  right: 80.3%;
+  left: 0%;
+  bottom: 84%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6f7479;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .prop-search-input{
+  position: absolute;
+  top: 10%;
+  right: 80%;
+  left: 3.5%;
+  bottom: 86.5%;
+  border: 0.1px solid #555555;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: white;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  font-weight: lighter;
+  background-color: #2f3137;
+  outline: none;
+  border-radius: 0.1rem;
+  padding: 0.5rem;
+  text-align: start;
+}
+
+.create-prop-page .prop-search-icon{
+  position: absolute;
+  top: 10%;
+  right: 80%;
+  left: 17.2%;
+  bottom: 86.7%;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(177, 177, 177);
+  font-size: 1rem;
+  font-weight: lighter;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.create-prop-page .hide-panel{
+  position: absolute;
+  top: 14.5%;
+  right: 94%;
+  left: 3.5%;
+  bottom: 10%;
+  border: 0.1px solid #555555;
+  background-color: #2f3137;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  opacity: 0.7;
+}
+
+.create-prop-page .hide-panel .panel-text{
+  color: white;
+  transform: rotate(90deg);
+  width: 10rem;
+  text-align: center;
+  height: 3.5%;
+  position: absolute;
+}
+
+.create-prop-page .hide-panel .left-box{
+  position: absolute;
+  top: 1.5%;
+  right: 20%;
+  left: 20%;
+  bottom: 95%;
+  background-color: #838591;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.create-prop-page .hide-panel .right{
+  top: 95%;
+  right: 20%;
+  left: 20%;
+  bottom: 1.5%;
+}
+
+.create-prop-page .edit-box{
+  position: absolute;
+  top: 14.4%;
+  right: 87%;
+  left: 6.6%;
+  bottom: 82.5%;
+  border: 0.1px solid #555555;
+  background-color: #2f3137;
+  display: flex;
+  color: white;
+  font-weight: lighter;
+  font-size: 75%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.1rem;
+  z-index: 5;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.create-prop-page .placed{
+  left: 13.5%;
+  right: 80%;
+}
+
+.create-prop-page .prop-box{
+  position: absolute;
+  top: 18%;
+  right: 80%;
+  left: 5.8%;
+  bottom: 10%;
+  display: flex;
+  overflow: initial;
+  justify-content: start;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  overflow: scroll;
+  align-items: start;
+  align-content: start;
+
+}
+
+.create-prop-page .prop-box .prop-item{
+  position: relative;
+  width: 100%;
+  height: 5%;
+  position: relative;
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+  display: flex;
+  border-radius: 0.1rem;
+  background-color: rgb(47 49 55 / 75%);
+  border: 1px solid #555555;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.create-prop-page .prop-box .prop-item:hover{
+  background-color: #296b5f;
+  opacity: 1;
+  border: none;
+}
+
+.create-prop-page .prop-box .prop-item:hover .prop-item-name{
+  color: #0ceebf;
+}
+
+.create-prop-page .prop-box .prop-item:hover .right-box{
+  background-color: #0ceebf;
+  color: #296b5f;
+}
+
+.create-prop-page .prop-box .prop-item .prop-item-name{
+  position: absolute;
+  top: 30%;
+  right: 0%;
+  left: 17%;
+  bottom: 0%;
+  color: white;
+  font-size: 80%;
+  font-weight: lighter;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.create-prop-page .prop-box .prop-item .prop-img{
+  position: absolute;
+  width: 8%;
+  left: 4%;
+  top: 25%;
+}
+
+.create-prop-page .prop-box .prop-item .right-box{
+  position: absolute;
+  top: 20%;
+  background-color: #296b5f;
+  right: 5%;
+  left: 85%;
+  bottom: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0ceebf;
+  font-size: 1rem;
+  font-weight: lighter;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.create-prop-page .prop-info-box{
+  position: absolute;
+  top: 30%;
+  right: 7%;
+  left: 80%;
+  bottom: 16%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+  align-content: start;
+  background-color: #2f3137;
+  border: 1px solid #555555;
+  opacity: 0.7;
+  overflow: scroll;
+}
+
+.create-prop-page .prop-info-box .prop-info-header{
+  position: absolute;
+  top: 3%;
+  right: 0%;
+  left: 5%;
+  bottom: 90%;
+  display: flex;
+  align-items: start;
+  color: #4dc9b3;
+  text-shadow: 0 0 10px #4dc9b3;
+  justify-content: start;
+  color: #0ceebf;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .prop-info-box .prop-info-alt{
+  position: absolute;
+  top: 7%;
+  right: 0%;
+  left: 5%;
+  bottom: 85%;
+  display: flex;
+  align-items: start;
+  color: #4dc9b3;
+  justify-content: start;
+  color: #6f7479;
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .prop-info-box .model-hash-box{
+  position: absolute;
+  top: 11%;
+  right: 46%;
+  left: 6%;
+  padding: 0.5rem;
+  bottom: 84%;
+  border-radius: 0.1rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  background: linear-gradient(to right, rgba(128, 128, 128),  transparent);
+  justify-content: start;
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .prop-info-box .model-hash{
+  position: absolute;
+  top: 11%;
+  right: 5%;
+  left: 55%;
+  border-radius: 0.1rem;
+  padding: 0.5rem;
+  bottom: 84%;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #78583e;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .prop-info-box .prop-header-2{
+  position: absolute;
+  top: 25%;
+  right: 0%;
+  left: 5.5%;
+  bottom: 65%;
+  display: flex;
+  text-shadow: 0 0 10px #4dc9b3;
+  align-items: start;
+  color: #4dc9b3;
+  justify-content: start;
+  color: #0ceebf;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .prop-info-box .prop-alt-2{
+  position: absolute;
+  top: 29%;
+  right: 0%;
+  left: 5.5%;
+  bottom: 40%;
+  display: flex;
+  width: 100%;
+  align-items: start;
+  color: #4dc9b3;
+  justify-content: start;
+  color: #838283;
+  opacity: 1;
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .prop-info-box .prop-desc-box{
+  position: absolute;
+  top: 31%;
+  right: 50%;
+  left: 3%;
+  bottom: 30%;
+  display: flex;
+  align-items: start;
+  color: #4dc9b3;
+  justify-content: start;
+  color: #838283;
+  opacity: 1;
+  font-size: 0.6rem;
+  font-weight: lighter;
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: start;
+  padding: 0.5rem;
+}
+
+.create-prop-page .prop-info-box .prop-desc-box .prop-desc-item{
+  position: relative;
+  width: 100%;
+  height: 15%;
+  position: relative;
+  margin-top: 0.2rem;
+  opacity: 1;
+  display: flex;
+  border-radius: 0.1rem;
+  background: linear-gradient(to right, rgba(128, 128, 128),  transparent);
+  overflow: hidden;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: white;
+}
+
+.create-prop-page .prop-info-box .prop-desc-box .prop-desc-item .desc-item-name{
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  left: 5%;
+  bottom: 0%;
+  color: white;
+  font-size: 120%;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.create-prop-page .prop-desc-alt-box{
+  position: absolute;
+  top: 31%;
+  right: 0%;
+  left: 46%;
+  bottom: 30%;
+  display: flex;
+  align-items: start;
+  color: #4dc9b3;
+  justify-content: start;
+  color: #838283;
+  opacity: 1;
+  font-size: 0.6rem;
+  font-weight: lighter;
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: start;
+  padding: 0.5rem;
+}
+
+.create-prop-page .prop-desc-alt-box .prop-desc-item-alt{
+  position: relative;
+  width: 100%;
+  height: 15%;
+  position: relative;
+  margin-top: 0.2rem;
+  opacity: 1;
+  display: flex;
+  border-radius: 0.1rem;
+  background-color: #838487;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: white;
+}
+
+.create-prop-page .item-material-header{
+  position: absolute;
+  top: 72%;
+  right: 0%;
+  left: 5.5%;
+  bottom: 5%;
+  display: flex;
+  text-shadow: 0 0 10px #4dc9b3;
+  align-items: start;
+  color: #4dc9b3;
+  justify-content: start;
+  color: #0ceebf;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .item-material-alt{
+  position: absolute;
+  top: 76%;
+  right: 0%;
+  left: 5.5%;
+  bottom: 0%;
+  display: flex;
+  width: 100%;
+  align-items: start;
+  color: #4dc9b3;
+  justify-content: start;
+  color: #838283;
+  opacity: 1;
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .select-item-img{
+  position: absolute;
+  top: 80%;
+  right: 50%;
+  left: 6%;
+  bottom: 5%;
+  width: 10%;
+  height: 5%;
+  background-color: #7c787a;
+  display: flex;
+  opacity: 1;
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+}
+
+.create-prop-page .select-item-name-box{
+  position: absolute;
+  top: 80%;
+  right: 3%;
+  left: 25%;
+  bottom: 12%;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-color: #74563a;
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .material-placed{
+  position: absolute;
+  top: 89.5%;
+  right: 50%;
+  left: 6.5%;
+  bottom: 7%;
+  opacity: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.1rem;
+  background: linear-gradient(to right, rgba(128, 128, 128),  transparent);
+  overflow: hidden;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: white;
+}
+
+.create-prop-page .material-placed .material-placed-name{
+  position: absolute;
+  top: 0%;
+  right: 20%;
+  left: 0%;
+  bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.55rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .material-placed-number{
+  position: absolute;
+  top: 89.5%;
+  right: 2%;
+  left: 50%;
+  bottom: 7%;
+  opacity: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.1rem;
+  font-size: 0.6rem;
+  background-color: #74563a;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: white;
+}
+
+.create-prop-page .material-placed .material-placed-text{
+  position: absolute;
+  top: 0%;
+  right: 20%;
+  left: 0%;
+  bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.55rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .in-inventory-count{
+  position: absolute;
+  top: 94%;
+  right: 2%;
+  left: 85%;
+  bottom: 3%;
+  opacity: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.1rem;
+  font-size: 0.6rem;
+  background-color: #74563a;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: white;
+}
+
+.create-prop-page .in-inventory-count-text{
+  position: absolute;
+  top: 0%;
+  right: 10%;
+  left: 10%;
+  bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.55rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .in-inventory-box{
+  position: absolute;
+  top: 94%;
+  right: 25%;
+  left: 6.5%;
+  bottom: 3%;
+  opacity: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.1rem;
+  background: linear-gradient(to right, rgba(128, 128, 128),  transparent);
+  overflow: hidden;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: white;
+}
+
+.create-prop-page .in-inventory-box .in-inventory-text{
+  position: absolute;
+  top: 0%;
+  right: 57%;
+  left: 0%;
+  bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.55rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .tophr{
+  position: absolute;
+  top: 4%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 0.1%;
+  border: none;
+  background: linear-gradient(to right,transparent, rgba(128, 128, 128),  transparent);
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+
+.create-prop-page .colored{
+  position: absolute;
+  top: 3.7%;
+  right: 45%;
+  left: 45%;
+  bottom: 0%;
+  height: 0.3%;
+  border: none;
+  box-shadow: 0 0 10px #0ceebf;
+  background-color: #0ceebf;
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+
+.create-prop-page .mid-box{
+  position: absolute;
+  top: 4.5%;
+  right: 30%;
+  left: 36%;
+  bottom: 90%;
+  display: flex;
+  overflow: initial;
+  justify-content: start;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  overflow: scroll;
+  align-items: start;
+  align-content: start;
+}
+
+.create-prop-page .mid-box .mid-item{
+  position: relative;
+  padding: 0.6rem;
+  margin-left: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  color: white;
+  margin-top: 0.2rem;
+  opacity: 0.7;
+  display: flex;
+  border-radius: 0.1rem;
+  background-color: #2f3137;
+  border: 1px solid #555555;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.create-prop-page .mid-box .mid-item:hover{
+  background-color: #296b5f;
+  opacity: 1;
+  border: none;
+}
+
+.create-prop-page .discard-pop-up{
+  position: absolute;
+  top: 40%;
+  right: 40%;
+  left: 40%;
+  bottom: 45%;
+  display: flex;
+  background-color: #454545;
+  border: 1px solid #555555;
+  border-radius: 0.1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
+  z-index: 5;
+  opacity: 1;
+  display: none;
+}
+
+.create-prop-page .discard-pop-up .header{
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  left: 0%;
+  bottom: 70%;
+  display: flex;
+  color: #39b394;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .discard-pop-up .alt{
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  left: 10%;
+  bottom: 40%;
+  display: flex;
+  color: #828282;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.create-prop-page .discard-pop-up .leave-button{
+  position: absolute;
+  top: 70%;
+  right: 52%;
+  left: 10%;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  background-color: #832929;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.create-prop-page .discard-pop-up .leave-button:hover{
+  background-color: #ff3502;
+}
+
+
+.create-prop-page .discard-pop-up .cancel-button{
+  position: absolute;
+  top: 70%;
+  right: 10%;
+  left: 52%;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  background-color: #695732;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.create-prop-page .discard-pop-up .cancel-button:hover{
+  background-color: #d59b23;
+}
+
+.create-prop-page .save-pop-up{
+  position: absolute;
+  top: 40%;
+  right: 42%;
+  left: 42%;
+  bottom: 35%;
+  display: flex;
+  background-color: #454545;
+  border: 1px solid #555555;
+  border-radius: 0.1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
+  z-index: 5;
+  opacity: 1;
+  display: none;
+}
+
+.create-prop-page .save-pop-up .header{
+  position: absolute;
+  top: 2%;
+  right: 0%;
+  left: 0%;
+  bottom: 75%;
+  display: flex;
+  color: #39b394;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .save-pop-up .alt{
+  position: absolute;
+  top: 20%;
+  right: 8%;
+  left: 6%;
+  bottom: 65%;
+  display: flex;
+  color: #828282;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.create-prop-page .save-pop-up .create-prop-img{
+  position: absolute;
+  top: 38%;
+  right: 20%;
+  left: 10%;
+  bottom: 90%;
+  width: 10%;
+  height: 10%;
+  padding: 0.5rem;
+  background-color: #717473;
+}
+
+.create-prop-page .save-pop-up .create-prop-name-box{
+  position: absolute;
+  top: 38%;
+  right: 10%;
+  left: 28%;
+  bottom: 45%;
+  display: flex;
+  color: white;
+  align-items: start;
+  justify-content: start;
+  align-content: start;
+  text-align: start;
+  padding: 0.7rem;
+  background-color: #74563a;
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .save-pop-up .amount-box{
+  position: absolute;
+  top: 57%;
+  right: 25%;
+  left: 10%;
+  bottom: 33%;
+  opacity: 1;
+  font-size: 0.6rem;
+  text-align: start;
+  display: flex;
+  padding: 0.3rem;
+  align-items: start;
+  justify-content: start;
+  border-radius: 0.1rem;
+  background: linear-gradient(to right, rgba(128, 128, 128),  transparent);
+  overflow: hidden;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: white;
+}
+
+.create-prop-page .save-pop-up .amount-count-box{
+  position: absolute;
+  top: 57%;
+  right: 10%;
+  left: 78%;
+  bottom: 32.5%;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 0.2rem;
+  background-color: #74563a;
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+.create-prop-page .save-pop-up .req-count-box{
+  position: absolute;
+  top: 70%;
+  right: 10%;
+  left: 78%;
+  bottom: 20%;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 0.2rem;
+  background-color: #843235;
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+.create-prop-page .save-pop-up .req-box{
+  position: absolute;
+  top: 70%;
+  right: 25%;
+  left: 10%;
+  bottom: 20%;
+  opacity: 1;
+  font-size: 0.6rem;
+  text-align: start;
+  display: flex;
+  padding: 0.3rem;
+  align-items: start;
+  justify-content: start;
+  border-radius: 0.1rem;
+  background: linear-gradient(to right, rgba(128, 128, 128),  transparent);
+  overflow: hidden;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: white;
+}
+
+.create-prop-page .save-pop-up .save-build-button{
+  position: absolute;
+  top: 85%;
+  right: 65%;
+  left: 10%;
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cfdfdb;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  background-color: #3c7265;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.create-prop-page .save-pop-up .save-build-button:hover{
+  background-color: #239b82;
+  color: white;
+}
+
+.create-prop-page .save-pop-up .cancel-button{
+  position: absolute;
+  top: 85%;
+  right: 35%;
+  left: 38%;
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cfdfdb;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  background-color: #735d37;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.create-prop-page .save-pop-up .cancel-button:hover{
+  background-color: #d59b23;
+  color: white;
+}
+
+.create-prop-page .save-pop-up .discard-button{
+  position: absolute;
+  top: 85%;
+  right: 10%;
+  left: 68%;
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cfdfdb;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  background-color: #723737;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.create-prop-page .save-pop-up .discard-button:hover{
+  background-color: #b92a2c;
+  color: white;
+}
+
+.create-prop-page .top-box{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 65%;
+  bottom: 96%;
+  display: flex;
+  overflow: initial;
+  justify-content: start;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  overflow: scroll;
+  align-items: start;
+  align-content: start;
+}
+
+.create-prop-page .top-box .top-box-item{
+  position: relative;
+  width: 15%;
+  height: 80%;
+  position: relative;
+  margin-left: 1rem;
+  font-size: 50%;
+  margin-top: 0.2rem;
+  opacity: 0.7;
+  display: flex;
+  border-radius: 0.1rem;
+  word-spacing: 0px;
+  background-color: #2f3137;
+  border: 1px solid #555555;
+  overflow: hidden;
+  color: white;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
