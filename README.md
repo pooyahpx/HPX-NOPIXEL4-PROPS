@@ -18,7 +18,7 @@ https://github.com/Demigod916/object_gizmo download it
 # help for installation:
 1. download resource
 2. drag and drop in your server source
-3. open custom.txt and copy all lines inside of it and past it to qb-core/shared/items.lua 
+3. open custom.txt and copy all lines and past it to qb-core/shared/items.lua 
 4. rename it to qb-props
 5. start your server and enjoy iy 
 
