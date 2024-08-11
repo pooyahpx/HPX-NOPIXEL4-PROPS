@@ -1,10 +1,15 @@
 # SCREEN SHOTS
 **********
  
-![Screenshot (420)](https://github.com/user-attachments/assets/65595c84-054a-45b6-8df0-27345de796eb)
+![Screenshot (392)](https://github.com/user-attachments/assets/9287afed-3527-4afe-9f91-d70acae1167d)
 
 ************
-![Screenshot (421)](https://github.com/user-attachments/assets/efc7d0a8-e103-4d2c-bc43-05797251c761)
+
+![Screenshot (393)](https://github.com/user-attachments/assets/2dced008-01b9-4cf9-abd4-7e0a4e0b9467)
+
+************
+
+![Screenshot (394)](https://github.com/user-attachments/assets/1fc469e6-59a8-4080-bbed-e8f92bf302a6)
 
 # REQUIREMENT
 https://github.com/Demigod916/object_gizmo download it
